@@ -1,0 +1,39 @@
+Se quiere un metodo que dado una fecha (dia, mes, gestion) te devuelva el
+dia siguiene de esa fecha (dia, mes ,gestion)
+
+dato entrada  5  mayo  2020 ---->  6   mayo  2020
+dato entrado  28 febrero  2020 ---> 29 febrero 2020
+dato entrado  28 febrero  2021 ---> 1 marzo 2021
+
+dato DAY incorrecto ---> dia incorrecto
+dato MOTH  incorrecto ---> mes incorrecto
+dato YEAR incorrecto ---> gestion incorrecto  si es menor a 1582
+
+mas de 1 dato incorrecto ---> ingresar nuevos datos
+
+class --- > DateUtils
+method --->
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+BOUNDARY TEST
+         1900 ------------------1960--------------------2020  = 30 años bisiestos
+    1899      1901---------1959      1961-----------2019     2021
+
+    1960 Y 2020 BISISESTOS
+PRUEBAS POR RANGOS
+   AÑOS BISIESTOS
+        Todos los años probar 28 febrero
+   CAMBIO DE AÑO
+        Todos los años probar 31 diciembre
+   CAMBIO DE MES
+        Los años 1900,2020 probar 30 junio, 31 julio, 31 agosto, 30 septiembre
+   CAMBIO DE DIA
+        Los años 1900,2020 probar 13 marzo 14 junio 15 septiembre 16 noviembre
+
+PRUEBAS CON DATOS INCORRECTOS
+    Años no bisiestos probar 29 febrero dia incorrecto
+    Probar dia -1 y 32
+    1960 probar mes abril,julio mal escrito
+    probar el año 1581,1580
+
